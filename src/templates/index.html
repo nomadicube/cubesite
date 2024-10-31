@@ -1,0 +1,11 @@
+{% include "header.html" %}
+
+  <div class="mainbox">
+    {% for posts in blog_posts %}
+    {{ posts|safe }}
+    <hr/>
+    <br/>
+    {% endfor %}
+  </div>
+
+{% include "footer.html" %}
